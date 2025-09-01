@@ -9,6 +9,7 @@ const LoginPage = () => {
   const handleGoogleLogin = () => {
     // This is where you'll integrate your Google SSO
     console.log("Google SSO login clicked");
+    window.location.href = "http://localhost:8081/login/oauth2/code/google";
   };
 
   const handleGitLabLogin = () => {
@@ -81,6 +82,8 @@ const LoginPage = () => {
 
               <Button
                 onClick={handleGitLabLogin}
+                                
+
                 variant="outline"
                 className="w-full h-12 text-base font-medium border-2 hover:border-gitlab-orange/50 hover:bg-gitlab-orange/5 transition-all duration-200"
               >
